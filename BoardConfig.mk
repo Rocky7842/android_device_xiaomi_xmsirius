@@ -7,7 +7,7 @@
 # Inherit from sdm710-common
 include device/xiaomi/sdm710-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/sirius
+DEVICE_PATH := device/xiaomi/xmsirius
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -26,4 +26,4 @@ TARGET_KERNEL_CONFIG += xiaomi/sirius.config
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit from the proprietary version
-include vendor/xiaomi/sirius/BoardConfigVendor.mk
+include vendor/xiaomi/xmsirius/BoardConfigVendor.mk

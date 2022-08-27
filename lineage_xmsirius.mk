@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from grus device
-$(call inherit-product, device/xiaomi/sirius/device.mk)
+$(call inherit-product, device/xiaomi/xmsirius/device.mk)
 
-PRODUCT_NAME := lineage_sirius
-PRODUCT_DEVICE := sirius
+PRODUCT_NAME := lineage_xmsirius
+PRODUCT_DEVICE := xmsirius
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 8 SE

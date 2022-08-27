@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),sirius)
+ifeq ($(TARGET_DEVICE),xmsirius)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

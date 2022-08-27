@@ -24,7 +24,7 @@ fi
 
 set -e
 
-export DEVICE=sirius
+export DEVICE=xmsirius
 export DEVICE_COMMON=sdm710-common
 export VENDOR=xiaomi
 

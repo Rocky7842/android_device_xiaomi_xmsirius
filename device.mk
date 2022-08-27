@@ -46,4 +46,4 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-v29.so \
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/sirius/sirius-vendor.mk)
+$(call inherit-product, vendor/xiaomi/xmsirius/xmsirius-vendor.mk)
