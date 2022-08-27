@@ -22,5 +22,8 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 3221225472
 # Kernel
 TARGET_KERNEL_CONFIG += xiaomi/sirius.config
 
+# VINTF
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Inherit from the proprietary version
 include vendor/xiaomi/sirius/BoardConfigVendor.mk
