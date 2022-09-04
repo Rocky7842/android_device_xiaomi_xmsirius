@@ -250,10 +250,6 @@ vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/tmd2725.json
 vendor/etc/sensors/sns_reg_config
 
-# Snapdragon Computer Vision Engine
-vendor/lib/libscveFaceRecognition.so
-vendor/lib64/libscveFaceRecognition.so
-
 # Thermal configs
 vendor/etc/thermal-engine-sdm710-high.conf
 vendor/etc/thermal-engine-sdm710-map.conf
