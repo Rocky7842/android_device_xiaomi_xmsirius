@@ -13,6 +13,9 @@ function blob_fixup() {
         vendor/lib64/sensors.ssc.so)
             ${PATCHELF} --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
             ;;
+        vendor/lib/camera/components/com.qti.node.watermark.so)
+            ${PATCHELF} --add-needed "libpiex-v29.so" "${2}"
+            ;;
     esac
 }
 
