@@ -170,7 +170,6 @@ vendor/lib/mibokeh_710_opencl.bin
 
 # Display calibration
 vendor/etc/dsi_ss_ea8074_fhd_cmd_display_mi.xml
-vendor/etc/qdcm_calib_data_ss_fhd_cmd_dsi_panel.xml
 
 # Display configs
 vendor/etc/hdr_config.cfg
