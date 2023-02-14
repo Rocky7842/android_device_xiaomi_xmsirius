@@ -22,6 +22,9 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 3221225472
 # Kernel
 TARGET_KERNEL_CONFIG += xiaomi/sirius.config
 
+# Power
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
