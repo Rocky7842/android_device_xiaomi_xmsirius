@@ -29,8 +29,5 @@
     <dimen name="ongoing_appops_dot_min_padding">11dp</dimen>
 
     <!-- gap on either side of status bar notification icons -->
-    <dimen name="status_bar_icon_padding">-1.25dp</dimen>
-
-    <!-- size at which Notification icons will be drawn in the status bar -->
-    <dimen name="status_bar_icon_drawing_size">17dp</dimen>
+    <dimen name="status_bar_icon_horizontal_margin">-1sp</dimen>
 </resources>
