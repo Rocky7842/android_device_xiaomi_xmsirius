@@ -8,6 +8,7 @@
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib/libswregistrationalgo.so) ;&
         vendor/lib/hw/camera.qcom.so) ;&
         vendor/lib64/libsensorcal.so) ;&
         vendor/lib64/sensors.ssc.so)
@@ -16,7 +17,6 @@ function blob_fixup() {
         vendor/lib/camera/components/com.qti.node.watermark.so)
             grep -q "libpiex_shim.so" "${2}" || ${PATCHELF} --add-needed "libpiex_shim.so" "${2}"
             ;;
-        vendor/lib/libswregistrationalgo.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
     esac
