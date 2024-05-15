@@ -19,7 +19,7 @@ PRODUCT_NAME := lineage_xmsirius
 PRODUCT_DEVICE := xmsirius
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi 8 SE
+PRODUCT_MODEL := MI 8 SE
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
