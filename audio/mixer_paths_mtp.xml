@@ -2389,14 +2389,19 @@
 
     <!-- Dual MIC devices -->
     <path name="handset-dmic-endfire">
-        <ctl name="DEC1 MUX" value="DMIC3" />
-        <ctl name="DEC2 MUX" value="DMIC4" />
+        <ctl name="DEC1 MUX" value="ADC1" />
+        <ctl name="ADC1_INP1 Switch" value="1" />
+        <ctl name="DEC2 MUX" value="ADC2" />
+        <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="INT3_MI2S_TX Channels" value="Two" />
     </path>
-
     <path name="speaker-dmic-endfire">
-        <ctl name="DEC1 MUX" value="DMIC2" />
-        <ctl name="DEC2 MUX" value="DMIC4" />
+        <ctl name="DEC1 MUX" value="ADC1" />
+        <ctl name="DEC1 Volume" value="100" />
+        <ctl name="ADC1_INP1 Switch" value="1" />
+        <ctl name="DEC2 MUX" value="ADC2" />
+        <ctl name="DEC2 Volume" value="100" />
+        <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="INT3_MI2S_TX Channels" value="Two" />
     </path>
 
