@@ -407,16 +407,6 @@
     <ctl name="MultiMedia28 Mixer INT3_MI2S_TX" value="0" />
     <ctl name="MultiMedia29 Mixer INT3_MI2S_TX" value="0" />
 
-    <!-- anc related -->
-    <ctl name="Ultrasound Capture" value="0" />
-    <ctl name="Ultrasound Event" value="0" />
-    <ctl name="Ultrasound Mode" value="0" />
-    <ctl name="Ultrasound Suspend" value="0" />
-    <ctl name="Ultrasound Enable" value="Off" />
-    <ctl name="Ultrasound Rx Port" value="Off" />
-    <ctl name="Ultrasound RampDown" value="Off" />
-    <ctl name="Ultrasound Microphone Index" value="0" />
-
     <!-- Add the new path begin -->
     <ctl name="INT0_MI2S_RX SampleRate" value="KHZ_48" />
 
@@ -489,70 +479,6 @@
     <path name="audio-playback-voip speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia10" value="1" />
     </path>
-
-    <path name="ultrasound-capture-input">
-    </path>
-
-    <path name="ultrasound-proximity">
-        <ctl name="Ultrasound Enable" value="On" />
-        <ctl name="Ultrasound Mode" value="637" />
-    </path>
-
-    <path name="ultrasound-proximity-output">
-        <ctl name="INT0_MI2S_RX_DL_HL Switch" value="1" />
-    </path>
-
-    <path name="ultrasound-proximity-output headphones">
-        <ctl name="INT0_MI2S_RX_DL_HL Switch" value="1" />
-    </path>
-
-    <path name="ultrasound-proximity-output handset">
-        <ctl name="INT0_MI2S_RX_DL_HL Switch" value="1" />
-    </path>
-
-    <path name="ultrasound-proximity-input">
-    </path>
-
-    <path name="ultrasound-output">
-        <ctl name="INT0_MI2S_RX SampleRate" value="KHZ_96" />
-        <ctl name="RX1 MIX1 INP1" value="RX1" />
-        <ctl name="RDAC2 MUX" value="RX1" />
-        <ctl name="EAR_S" value="Switch" />
-        <ctl name="INT0_MI2S_RX Channels" value="One" />
-        <!--ctl name="INT0_MI2S_RX SampleRate" value="KHZ_96" /-->
-    </path>
-
-    <path name="ultrasound-input">
-       	<!--<ctl name="Ultrasound Microphone Index" value="1" /> -->
-        <ctl name="DEC1 MUX" value="ADC2" />
-        <ctl name="ADC2 MUX" value="INP3" />
-        <ctl name="DEC1 Volume" value="84" />
-        <ctl name="ADC3 Volume" value="6" />
-        <ctl name="INT3_MI2S_TX Channels" value="Two" />
-    </path>
-
-    <path name="ultrasound-output-stereo">
-    </path>
-
-    <path name="ultrasound-secondary-input">
-    </path>
- 
-    <path name="ultrasound-rampdown">
-        <ctl name="Ultrasound RampDown" value="On" />
-    </path>
-    
-    <path name="ultrasound-screen-on">
-         <ctl name="Ultrasound Event" value="1" />
-    </path>
-    
-    <path name="ultrasound-on">
-        <ctl name="Ultrasound Rx Port" value="On" />
-    </path>
-    
-    <path name="ultrasound-suspend">
-        <ctl name="Ultrasound Suspend" value="1" />
-    </path>
-
 
     <path name="camcorder-dmic">
         <ctl name="DEC1 MUX" value="ADC1" />
@@ -2463,14 +2389,12 @@
 
     <!-- Dual MIC devices -->
     <path name="handset-dmic-endfire">
-        <ctl name="Ultrasound Microphone Index" value="1" />
         <ctl name="DEC1 MUX" value="DMIC3" />
         <ctl name="DEC2 MUX" value="DMIC4" />
         <ctl name="INT3_MI2S_TX Channels" value="Two" />
     </path>
 
     <path name="speaker-dmic-endfire">
-        <ctl name="Ultrasound Microphone Index" value="1" />
         <ctl name="DEC1 MUX" value="DMIC2" />
         <ctl name="DEC2 MUX" value="DMIC4" />
         <ctl name="INT3_MI2S_TX Channels" value="Two" />
