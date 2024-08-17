@@ -2157,12 +2157,17 @@
     </path>
 
     <path name="handset">
-        <ctl name="EAR SPKR PA Gain" value="G_3_DB" />
-        <path name="speaker-mono" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RDAC2 MUX" value="RX1" />
+        <ctl name="EAR_S" value="Switch" />
     </path>
 
     <path name="handset-mic">
-        <path name="dmic3" />
+        <ctl name="INT3_MI2S_TX Channels" value="Two" />
+        <ctl name="DEC1 MUX" value="ADC1" />
+        <ctl name="ADC1_INP1 Switch" value="1" />
+        <ctl name="DEC2 MUX" value="ADC2" />
+        <ctl name="ADC2 MUX" value="INP3" />
     </path>
 
     <path name="va-enroll-mic">
@@ -2186,13 +2191,15 @@
     </path>
 
     <path name="handset-mic-db">
+        <path name="adc1" />
     </path>
 
     <path name="handset-mic-cdp">
-        <path name="dmic2" />
+        <path name="adc1" />
     </path>
 
     <path name="handset-mic-sbc">
+        <path name="adc1" />
     </path>
 
     <path name="three-mic">
