@@ -1,6 +1,3 @@
-# Audio
-vendor.audio.feature.ssrec.enable=false
-
 # Bluetooth
 bluetooth.device.default_name=Xiaomi MI 8 SE
 

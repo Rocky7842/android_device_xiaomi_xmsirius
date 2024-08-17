@@ -36,13 +36,6 @@ vendor/lib/rfsa/adsp/misound_res.bin
 vendor/firmware/tas2557_uCDSP_aac.bin
 vendor/firmware/tas2557_uCDSP_goer.bin
 
-# Audio hardware
-vendor/lib/hw/audio.primary.sdm710.so
-vendor/lib/vndk/libxlog.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioroute_ext.so
-
 # Camera
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so|7629615e835fc03afc86f88a266414bc2db82231
