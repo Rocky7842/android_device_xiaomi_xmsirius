@@ -30,4 +30,8 @@
 
     <!-- gap on either side of status bar notification icons -->
     <dimen name="status_bar_icon_horizontal_margin">-1sp</dimen>
+
+    <!-- Microns/ums (1000 um = 1mm) per pixel for the given device. If unspecified, UI that
+        relies on this value will not be sized correctly. -->
+    <item name="pixel_pitch" format="float" type="dimen">60.05</item>
 </resources>
