@@ -180,7 +180,6 @@ vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/libqcbor.so
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
