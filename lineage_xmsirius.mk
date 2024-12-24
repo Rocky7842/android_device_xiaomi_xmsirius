@@ -24,6 +24,5 @@ PRODUCT_MODEL := MI 8 SE
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sirius-user 10 QKQ1.190828.002 V12.5.1.0.QEBCNXM release-keys"
-
-BUILD_FINGERPRINT := Xiaomi/sirius/sirius:10/QKQ1.190828.002/V12.5.1.0.QEBCNXM:user/release-keys
+    BuildDesc="sirius-user 10 QKQ1.190828.002 V12.5.1.0.QEBCNXM release-keys" \
+    BuildFingerprint=Xiaomi/sirius/sirius:10/QKQ1.190828.002/V12.5.1.0.QEBCNXM:user/release-keys
