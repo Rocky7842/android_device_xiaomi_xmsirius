@@ -1,5 +1,9 @@
 # Unpinned blobs from sirius-user 10 QKQ1.190828.002 V12.5.1.0.QEBCNXM release-keys
 
+# libarcsoft_dualcam_refocus and libarcsoft_beautyshot have intentionally undefined symbols that are resolved during dynamic loading
+# libSNPE has unresolved symbols: __aeabi_f2lz, __aeabi_ul2f
+# libcamera_scene has unresolved symbols: __aeabi_d2uiz, __aeabi_dmul
+
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
@@ -40,12 +44,12 @@ vendor/firmware/tas2557_uCDSP_goer.bin
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so|7629615e835fc03afc86f88a266414bc2db82231
 vendor/lib/libFaceGrade.so
-vendor/lib/libSNPE.so
+vendor/lib/libSNPE.so;DISABLE_CHECKELF
 vendor/lib/libXMFD_AgeGender.so
 vendor/lib/libbeauty.so
 vendor/lib/libc++_shared.so
 vendor/lib/libcamera_nn_stub.so
-vendor/lib/libcamera_scene.so
+vendor/lib/libcamera_scene.so;DISABLE_CHECKELF
 vendor/lib/libcamxfdalgov7.so
 vendor/lib/libcamxfdengine.so
 vendor/lib/libcamxstatscore.so
@@ -63,9 +67,9 @@ vendor/lib/libsymphonypower.so
 vendor/lib/libvidhance.so
 
 # Camera (Arcsoft modules)
-vendor/lib/libarcsoft_beautyshot.so
+vendor/lib/libarcsoft_beautyshot.so;DISABLE_CHECKELF
 vendor/lib/libarcsoft_dualcam_optical_zoom_control.so
-vendor/lib/libarcsoft_dualcam_refocus.so
+vendor/lib/libarcsoft_dualcam_refocus.so;DISABLE_CHECKELF
 vendor/lib/libarcsoft_high_dynamic_range.so
 vendor/lib/libarcsoft_supernight.so
 
