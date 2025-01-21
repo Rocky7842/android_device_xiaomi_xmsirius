@@ -9,8 +9,6 @@ include device/xiaomi/sdm710-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/xmsirius
 
-BUILD_BROKEN_DUP_RULES := true
-
 # Display
 TARGET_SCREEN_DENSITY := 440
 
