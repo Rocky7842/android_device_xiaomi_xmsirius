@@ -39,6 +39,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libprotobuf-cpp-full.so', 'libprotobuf-cpp-full-v29.so'),
     'vendor/lib/camera/components/com.qti.node.watermark.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
+    ('vendor/lib/libarcsoft_beautyshot.so', 'vendor/lib/libarcsoft_dualcam_optical_zoom_control.so'): blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
